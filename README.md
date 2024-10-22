@@ -11,7 +11,7 @@ TempContact is an Android application that provides temporary email addresses an
 
 ## Screenshots
 
-![App UI](https://github.com/ExploitTheLoop/TempContact/blob/master/video6104997712900395444.mp4)
+![App UI](https://github.com/ExploitTheLoop/TempContact/blob/master/c39886db-205e-4e73-839f-c635996c98d1.gif)
 
 ## Installation
 
