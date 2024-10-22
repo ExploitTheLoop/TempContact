@@ -11,7 +11,7 @@ TempContact is an Android application that provides temporary email addresses an
 
 ## Screenshots
 
-![App UI]([path_to_your_gif.gif](https://github.com/ExploitTheLoop/TempContact/blob/master/video6104997712900395444-ezgif.com-video-to-gif-converter.gif))  
+![App UI][path_to_your_gif.gif](https://github.com/ExploitTheLoop/TempContact/blob/master/video6104997712900395444-ezgif.com-video-to-gif-converter.gif)  
 *(Replace `path_to_your_gif.gif` with the actual path or URL to your gif)*
 
 ## Installation
