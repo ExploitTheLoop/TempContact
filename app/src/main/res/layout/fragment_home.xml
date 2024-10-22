@@ -1,0 +1,126 @@
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/light_gray">
+
+    <TextView
+        android:id="@+id/tvYourEmailAddress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Your Temporary\nEmail Address"
+        android:textSize="18sp"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:layout_marginTop="32dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <LinearLayout
+        android:id="@+id/llChange"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        app:layout_constraintTop_toBottomOf="@id/tvYourEmailAddress"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="16dp">
+
+        <ImageView
+            android:id="@+id/btnChange"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:background="@drawable/exchange" />
+
+        <TextView
+            android:gravity="center"
+            android:id="@+id/tvChangeLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="32dp"
+            android:text="Change"
+            android:textSize="14sp"
+            android:textColor="@color/black"
+            android:layout_marginStart="8dp" />
+    </LinearLayout>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardEmail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        app:layout_constraintTop_toBottomOf="@id/llChange"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:cardCornerRadius="8dp"
+        app:cardElevation="0dp"
+        app:cardBackgroundColor="#34FFFFFF">
+
+        <LinearLayout
+            android:gravity="center"
+            android:layout_width="300dp"
+            android:layout_height="150dp"
+            android:orientation="vertical"
+            android:padding="16dp"
+            android:background="@drawable/background">
+
+            <ImageView
+                android:id="@+id/ivEmailIcon"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:src="@drawable/email"
+                android:layout_gravity="center" />
+
+            <TextView
+                android:id="@+id/tvEmail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="YourEmail@animetone.com"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:gravity="center"
+                android:layout_marginTop="8dp" />
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+    <Button
+        android:textColor="@color/black"
+        android:id="@+id/btnCopy"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="COPY"
+        android:gravity="center"
+        android:drawableLeft="@drawable/copy"
+        android:paddingLeft="16dp"
+        app:layout_constraintTop_toBottomOf="@id/cardEmail"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="16dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginEnd="32dp"
+        style="@style/Widget.MaterialComponents.Button.OutlinedButton" />
+
+    <Button
+        android:textColor="@color/green"
+        android:id="@+id/btnEdit"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="EDIT"
+        android:gravity="center"
+        android:drawableLeft="@drawable/pencil"
+        android:paddingLeft="16dp"
+        app:layout_constraintTop_toBottomOf="@id/btnCopy"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="8dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginEnd="32dp"
+        style="@style/Widget.MaterialComponents.Button.OutlinedButton" />
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

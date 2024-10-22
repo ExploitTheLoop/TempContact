@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@android:color/transparent"
+    android:padding="16dp">
+
+    <!-- Sender Icon -->
+    <ImageView
+        android:id="@+id/iconSender"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:src="@android:drawable/ic_dialog_email"
+        android:tint="@android:color/darker_gray"
+        android:layout_marginEnd="12dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:contentDescription="Sender Icon" />
+
+    <!-- Sender Email -->
+    <TextView
+        android:id="@+id/tvFromDetail"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="8dp"
+        android:fontFamily="@font/alegreya_sans_medium"
+        android:gravity="center"
+        android:text="sender@example.com"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        android:textColor="@android:color/black"
+        app:layout_constraintBottom_toBottomOf="@id/iconSender"
+        app:layout_constraintEnd_toStartOf="@id/btnClose"
+        app:layout_constraintStart_toEndOf="@id/iconSender"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <!-- Close Button -->
+    <ImageButton
+        android:id="@+id/btnClose"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:background="?attr/selectableItemBackgroundBorderless"
+        android:src="@android:drawable/ic_menu_close_clear_cancel"
+        android:contentDescription="Close"
+        android:tint="@android:color/black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="@id/iconSender" />
+
+    <!-- Divider Line -->
+    <View
+        android:layout_width="0dp"
+        android:layout_height="1dp"
+        android:background="@android:color/black"
+        android:layout_marginTop="12dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/iconSender" />
+
+    <!-- Message Body -->
+    <TextView
+
+        android:id="@+id/tvBodyDetail"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/alegreya_sans_medium"
+        android:paddingTop="16dp"
+        android:text="Dear user, thank you for joining Incognito. This is a sample message body."
+        android:textColor="@color/black"
+        android:textIsSelectable="true"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/iconSender" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
